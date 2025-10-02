@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body {
+            margin: 20px;
+            background-color: gray;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        input, select, textarea {
+            margin: 5px 0;
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Pendaftaran Pelatihan Web</h1>
+        <p>Silahkan isi formulir ini untuk mendaftar</p>
+
+        <div>
+            <h4>Data Diri Peserta</h4>
+            <label>Nama Lengkap :</label><br>
+            <input type="text"><br>
+
+            <label>Email :</label><br>
+            <input type="email"><br>
+
+            <label>Nomor Telepon (WhatsApp) :</label><br>
+            <input type="text"><br>
+
+            <label>Jenis Kelamin :</label><br>
+            <input type="radio" name="gender"> Pria
+            <input type="radio" name="gender"> Wanita
+        </div>
+
+        <div>
+            <h4>Pilihan Pelatihan</h4>
+            <select>
+                <option>Pilih Pelatihan</option>
+                <option>Node JS</option>
+                <option>React</option>
+            </select>
+
+            <h4>Sumber Informasi</h4>
+            <input type="checkbox"> Instagram <br>
+            <input type="checkbox"> Facebook <br>
+            <input type="checkbox"> X
+        </div>
+
+        <h4>Catatan Tambahan (Opsional)</h4>
+        <div>
+            <textarea rows="3"
+                placeholder="Tulis catatan tambahan..."></textarea>
+        </div>
+
+        <button>Daftar Sekarang</button>
+        <button type="reset">Bersihkan Formulir</button>
+    </body>
+</html>
