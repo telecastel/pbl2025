@@ -29,9 +29,28 @@
             text-decoration: none;
             color: black;
         }
+
         a {
             text-decoration: none;
             size: 40px;
+        }
+
+        .flexbox {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .flexboxs {
+            background: rgb(151, 146, 146);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
         }
     </style>
 </head>
@@ -46,45 +65,49 @@
     </ul>
     <hr>
     <center>
-        <img src="gambar/images1.png" alt="">
+        <img src="gambar/images1.png" alt>
         <h1>Makanan Terbaru Musim Ini</h1>
         <h4>Temukan Kenikmatan dari Produk yang Kami Jual</h4>
         <a href="#">BELANJA SEKARANG</a>
         <hr>
-        <h4>Kategori Makanan</h4>
-        <table style="width: 100%;">
-            <tr>
-                <td> <img src="gambar/image2.png" alt=""></td>
-                <td><img src="gambar/image3.png" alt=""></td>
-                <td><img src="gambar/image4.png" alt=""></td>
-                <td><img src="gambar/images1.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>Mie Telur</td>
-                <td>Kentang</td>
-                <td>Kue</td>
-                <td>Makanan</td>
-            </tr>
-        </table>
+        <h2>Kategori Makanan</h2>
+        <div class="flexbox">
+            <div class="flexboxs"><img src="gambar/image2.png" alt>
+                <p>Mie Telur</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/image3.png" alt>
+                <p>Kentang</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/image4.png" alt>
+                <p>Kue</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/images1.png" alt>
+                <p>Makanan</p>
+            </div>
+        </div>
+
         <hr>
-        <table style="width: 100%;">
-            <tr>
-                <td> <img src="gambar/minum1.png" alt=""></td>
-                <td><img src="gambar/minum2.png" alt=""></td>
-                <td><img src="gambar/minum3.png" alt=""></td>
-                <td><img src="gambar/minum4.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>Boba</td>
-                <td>Es</td>
-                <td>Es Jeruk</td>
-                <td>Jus</td>
-            </tr>
-        </table>
+        <h2>Kategori Minuman</h2>
+        <div class="flexbox">
+            <div class="flexboxs"><img src="gambar/minum2.png" alt>
+                <p>Air</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/minum3.png" alt>
+                <p>Jeruk</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/minum4.png" alt>
+                <p>Jus</p>
+            </div>
+            <div class="flexboxs"><img src="gambar/minum1.png" alt>
+                <p>Boba</p>
+            </div>
+        </div>
+
         <hr>
         <h4>Diskon Akhir Tahun!!!!</h4>
         <h4>Dapatkan hingga 50% Diskon</h4>
-        <a href="">Lihat Promo</a><hr>
+        <a href>Lihat Promo</a>
+        <hr>
         <table style="width: 100%; height: 100px;">
             <tr>
                 <td>ChikaFood</td>

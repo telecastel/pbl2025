@@ -6,26 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        h1, h2, h3, h4 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        div {
             display: inline-block;
         }
+
+        .kotak {
+            width: 100%;
+            height: 500px;
+            text-align: center;
+
+            background-color: salmon;
+        }
+
         .satu {
             background-color: purple;
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 300px;
+            margin: 50px;
         }
+
         .dua {
             background-color: pink;
             width: 100px;
+            height: 300px;
+            margin: 50px;
+
+        }
+
+        .tiga {
+            background-color: blue;
+            width: 100px;
+            height: 300px;
+            margin: 50px;
+        }
+
+        .position {
+            position: fixed;
+            background-color: rgb(80, 189, 223);
             height: 100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .z-index {
+            position: absolute;
+            z-index: 1;
+            background-color: rgb(133, 205, 238);
+            height: 100px;
+            width: 200px;
+        }
+
+        .flexbox {
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: chartreuse;
+            width: 100%;
+            padding: 0;
+        }
+
+        .containerGrid {
+            display: grid;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        .itemGrid {
+            background-color: lightblue;
+            border: 1px solid blue;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="satu">1</div>
-    <div class="dua">2</div>
-    <div class="tiga">3</div>
+    <div class="position">
+        <h2>Position (Fixed)</h2>
+    </div>
+    <div class="z-index"><h3>Z-Index</h3></div>
+    <div class="kotak"></div>
+    <div class="flexbox"><center><h3>Flex Box</h3></center>
+        <div class="dua">1</div>
+        <div class="dua">2</div>
+        <div class="dua">3</div>
+        <div class="dua">4</div>
+        <div class="dua">5</div>
+        <div class="dua">6</div>
+    </div>
+    <div class="containerGrid">
+        <div class="itemGrid">A</div>
+        <div class="itemGrid">B</div>
+        <div class="itemGrid">C</div>
+        <div class="itemGrid">D</div>
+    </div>
 </body>
 
 </html>
