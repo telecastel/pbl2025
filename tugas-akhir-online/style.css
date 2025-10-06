@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    background-color: #4444449e;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+header h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #aaa;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 20;
+    object-fit: cover;
+}
+
+#tentang {
+    margin-top: 50px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #333;
+}
+
+#pendidikan {
+    margin-top: 40px;
+}
+
+.section p {
+    font-size: 15px;
+    color: #333;
+}
+
+#keahlian {
+    margin-top: 40px;
+
+}
+
+#portofolio {
+    margin-top: 40px;
+}
+
+.portofolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portofolio-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.portofolio-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portofolio-card h3 {
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.portofolio-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#pekerjaan {
+    margin-top: 40px;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.grid h5 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.grid p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .intro,
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .images,
+    .about-img {
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
