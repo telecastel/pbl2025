@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background: #fff;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -14,7 +14,34 @@ body {
     padding-bottom: 60px;
 }
 
+.navbar {
+    background-color: #4444449e;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
 header h4 {
+    font-size: 20px;
     margin-bottom: 5px;
     color: #333;
 }
@@ -51,7 +78,7 @@ hr {
     object-fit: cover;
 }
 
-.tentang {
+#tentang {
     margin-top: 50px;
 }
 
@@ -75,7 +102,7 @@ hr {
     color: #333;
 }
 
-.section {
+#pendidikan {
     margin-top: 40px;
 }
 
@@ -84,7 +111,53 @@ hr {
     color: #333;
 }
 
-.contact {
+#keahlian {
+    margin-top: 40px;
+
+}
+
+#portofolio {
+    margin-top: 40px;
+}
+
+.portofolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portofolio-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.portofolio-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portofolio-card h3 {
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.portofolio-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#pekerjaan {
+    margin-top: 40px;
+}
+
+#contact {
     margin-top: 50px;
 }
 
